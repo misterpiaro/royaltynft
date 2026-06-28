@@ -4,10 +4,10 @@ pragma solidity ^0.8.20;
 import "forge-std/Script.sol";
 import "../src/RoyaltyNFT.sol";
 
-contract DeployRoyaltyNFT is script {
+contract DeployRoyaltyNFT is Script {
     function run() external {
         vm.startBroadcast();
-        new RoyaltyNFT("ipfs//bafkreify4vfo55jkbyg2sga2lzj6d57vtblreu7rpzpi7ezz5aufdhkyei");
+        new RoyaltyNFT("ipfs://bafybeiapm67osrgzzxgc2mh6ctr6wppunug5zsj6cvrktgjzu4anyvvmim/1.json");
         vm.stopBroadcast();
     }
 }
